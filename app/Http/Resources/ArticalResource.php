@@ -14,7 +14,7 @@ class ArticalResource extends JsonResource
      */
     public function toArray($request)
     {
-        // return parent::toArray($request);
+        // return parent::toArray($request); 
         return [
           'id' => $this->id ,
           'title' => $this->title ,
@@ -23,7 +23,7 @@ class ArticalResource extends JsonResource
           'user' => new UserResource($this->user) ,
           'created' => $this->created_at->diffForHumans() ,
         ];
-    }
+    } 
     public function with($request)
     {
       return [

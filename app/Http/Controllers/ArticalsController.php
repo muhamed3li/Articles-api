@@ -15,7 +15,9 @@ class ArticalsController extends Controller
      */
     public function index()
     {
-        return ArticalResource::collection(Artical::paginate(10));
+      //to get 10 articals => Artical::paginate(10);
+      //to get all articals => Artical::all();
+        return ArticalResource::collection(Artical::paginate(10));  
     }
 
     /**
@@ -47,7 +49,7 @@ class ArticalsController extends Controller
      */
     public function show($id)
     {
-        return new ArticalResource(Artical::find($id));
+        return new ArticalResource(Artical::find($id)); 
     }
 
     /**

@@ -14,7 +14,7 @@ class ArticalFactory extends Factory
     public function definition()
     {
         return [
-            'title'=>$this->faker->name(),
+            'title'=>$this->faker->name(), 
             'body'=>$this->faker->sentence(10),
             'user_id'=>1,
         ];

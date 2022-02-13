@@ -14,7 +14,7 @@ class CreateArticalsTable extends Migration
     public function up()
     {
         Schema::create('articals', function (Blueprint $table) {
-            $table->id();
+            $table->id(); 
             $table->string('title');
             $table->text('body');
             $table->unsignedBigInteger('user_id');
